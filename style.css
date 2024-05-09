@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(198, 224, 224);
+}
+
+h1 {
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: bolder;
+}
+
+.card-header {
+    margin: auto;
+    font-family: "Mouse Memoirs";
+}
+
+.card {
+    margin-top: 30px;
+}

@@ -5,46 +5,73 @@ const teamMembers = [
     name: "Scar",
     age: "40",
     movie: "Lion King",
-    position: "forward",
-    strengths: "Ball Control",
-    weaknesses: "no foregiveness and only cares about himself",
-    skills: ["Dribbling", "Shooting", "Passing"],
+    strengths: "Scar is intelligent",
+    weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
+    characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
+      imageURL: "imgs/scar.png" 
+
+
   },
   {
     name: "Maleficent",
-    age: 36,
-    activePlayer: true,
-    position: "Defender",
-    strengths: "Ball Control",
-    weaknesses: "heading ability",
-    skills: ["Dribbling", "Shooting", "Passing"],
+    age: "40",
+    movie: "Maleficent",
+    strengths: "Scar is intelligent",
+    weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
+    characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
+      imageURL: "imgs/maleficent.jpeg" 
   },
   {
-    name: "Lionel Messi Jr II",
-    age: 36,
-    activePlayer: true,
-    position: "mid",
-    strengths: "Ball Control",
-    weaknesses: "heading ability",
-    skills: ["Dribbling", "Shooting", "Passing"],
+    name: "Jafar",
+    age: "40",
+    movie: "Lion King",
+    strengths: "Scar is intelligent",
+    weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
+    characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
+      imageURL: "imgs/scar.png" 
   },
   {
-    name: "Lionel Messi Jr II",
-    age: 36,
-    activePlayer: true,
-    position: "mid",
-    strengths: "Ball Control",
-    weaknesses: "heading ability",
-    skills: ["Dribbling", "Shooting", "Passing"],
+    name: "Ursula",
+    age: "40",
+    movie: "Lion King",
+    strengths: "Scar is intelligent",
+    weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
+    characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
+      imageURL: "imgs/scar.png" 
   },
+  {
+    name: "Evil Queen",
+    age: "40",
+    movie: "Lion King",
+    strengths: "Scar is intelligent",
+    weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
+    characterTraits: ["Dribbling", "Shooting", "Passing"],
+    biography:
+      "Lionel Messi is considered one of the greatest football players of all time...",
+      imageURL: "imgs/scar.jpeg" 
+  },
+  {
+    name: "Captain Hook",
+    name: "Scar",
+    age: "40",
+    movie: "Lion King",
+    strengths: "Scar is intelligent",
+    weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
+    characterTraits: ["Dribbling", "Shooting", "Passing"],
+    biography:
+      "Lionel Messi is considered one of the greatest football players of all time...",
+      imageURL: "imgs/scar.png" 
+  },
+
+
 ];
 
 function generateTeamCards() {
@@ -56,12 +83,12 @@ function generateTeamCards() {
 
     //style the BGColor of my card based on pos
 
-    switch (member.position.toLowerCase()) {
-      case "forward":
-        backgroundColor = "red";
+    switch (member.movie.toLowerCase()) {
+      case "lion king":
+        backgroundColor = "orange";
         break;
-      case "mid":
-        backgroundColor = "green";
+      case "maleficent":
+        backgroundColor = "purple";
         break;
       case "defender":
         backgroundColor = "blue";
@@ -75,8 +102,13 @@ function generateTeamCards() {
                   <div class = "card-header">
                       ${member.name}
                   </div>
+                  <img src="${member.imageURL}" class="card-image-fluid">
                   <div id="cardBody" class="card-body" style="background-color:${backgroundColor};">
-                      <p><strong>Position:</strong> ${member.position}</p>
+                      <p><strong>Age:</strong> ${member.age}</p>
+                      <p><strong>Movie Known For :</strong> ${member.movie}</p>
+                      <p><strong>Position:</strong> ${member.movie}</p>
+                      <p><strong>Position:</strong> ${member.movie}</p>
+                      <p><strong>Position:</strong> ${member.movie}</p>
                   </div>
               </div>
           `;
