@@ -8,8 +8,7 @@ const teamMembers = [
     strengths: "Scar is intelligent",
     weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
     characterTraits: ["Dribbling", "Shooting", "Passing"],
-    biography:
-      "Lionel Messi is considered one of the greatest football players of all time...",
+    alive: "yes",
       imageURL: "imgs/scar.png" 
 
 
@@ -20,7 +19,7 @@ const teamMembers = [
     movie: "Maleficent",
     strengths: "Scar is intelligent",
     weaknesses: "Scar has an ego and jealousy that drive him to do horrible things",
-    characterTraits: ["Dribbling", "Shooting", "Passing"],
+    characterTraits: ["Dribbling",  "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
       imageURL: "imgs/maleficent.jpeg" 
@@ -34,7 +33,7 @@ const teamMembers = [
     characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
-      imageURL: "imgs/scar.png" 
+      imageURL: "imgs/jafar.webp" 
   },
   {
     name: "Ursula",
@@ -45,7 +44,7 @@ const teamMembers = [
     characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
-      imageURL: "imgs/scar.png" 
+      imageURL: "imgs/ursula.png" 
   },
   {
     name: "Evil Queen",
@@ -56,11 +55,10 @@ const teamMembers = [
     characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
-      imageURL: "imgs/scar.jpeg" 
+      imageURL: "imgs/evilqueen.png" 
   },
   {
     name: "Captain Hook",
-    name: "Scar",
     age: "40",
     movie: "Lion King",
     strengths: "Scar is intelligent",
@@ -68,7 +66,7 @@ const teamMembers = [
     characterTraits: ["Dribbling", "Shooting", "Passing"],
     biography:
       "Lionel Messi is considered one of the greatest football players of all time...",
-      imageURL: "imgs/scar.png" 
+      imageURL: "imgs/captainhook.png" 
   },
 
 
@@ -106,11 +104,11 @@ function generateTeamCards() {
                   <div id="cardBody" class="card-body" style="background-color:${backgroundColor};">
                       <p><strong>Age:</strong> ${member.age}</p>
                       <p><strong>Movie Known For :</strong> ${member.movie}</p>
+                      <p><strong>Strengths:</strong> ${member.strengths}</p>
+                      <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
+                      <p><strong>Character Traits:</strong> ${member.characterTraits}</p>
                       <p><strong>Position:</strong> ${member.movie}</p>
-                      <p><strong>Position:</strong> ${member.movie}</p>
-                      <p><strong>Position:</strong> ${member.movie}</p>
-                      <p><strong>Position:</strong> ${member.movie}</p>
-                      <p><strong>Position:</strong> ${member.movie}</p>
+                      <p><strong>Position:</strong> ${member.alive}</p>
                   </div>
               </div>
           `;
