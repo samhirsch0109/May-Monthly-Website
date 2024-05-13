@@ -14,4 +14,12 @@ h1 {
 
 .card {
     margin-top: 30px;
+    border: 3px solid black;
+}
+
+img.image-fluid {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
 }

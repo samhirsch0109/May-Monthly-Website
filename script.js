@@ -102,10 +102,12 @@ function generateTeamCards() {
                   <div class = "card-header">
                       ${member.name}
                   </div>
-                  <img src="${member.imageURL}" class="card-image-fluid">
+                  <img src="${member.imageURL}" class="image-fluid">
                   <div id="cardBody" class="card-body" style="background-color:${backgroundColor};">
                       <p><strong>Age:</strong> ${member.age}</p>
                       <p><strong>Movie Known For :</strong> ${member.movie}</p>
+                      <p><strong>Position:</strong> ${member.movie}</p>
+                      <p><strong>Position:</strong> ${member.movie}</p>
                       <p><strong>Position:</strong> ${member.movie}</p>
                       <p><strong>Position:</strong> ${member.movie}</p>
                       <p><strong>Position:</strong> ${member.movie}</p>
