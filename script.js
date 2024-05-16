@@ -6,7 +6,8 @@ const teamMembers = [
       strengths: "Intelligence, Manipulation",
       weaknesses: "Ego, Jealousy",
       traits: ["Mysterious", "Determined", "Complex"],
-      biography: "Scar is the main antagonist in Disney's 'The Lion King.' He is the brother of Mufasa and the uncle of Simba.",
+      skills: ["Manipulation", "Strategic Thinking", "Deception"],
+
       imageURL: "imgs/scar.png"
   },
   {
@@ -16,7 +17,7 @@ const teamMembers = [
       strengths: "Magic, Cunning",
       weaknesses: "Vengeful, Isolation",
       traits: ["Determined", "Powerful", "Resilient"],
-      biography: "Maleficent is the main character in Disney's 'Maleficent.' She is portrayed as the protector of the Moors but is betrayed, leading to her transformation into the iconic Disney villain.",
+      skills: ["Manipulation", "Strategic Thinking", "Deception"],
       imageURL: "imgs/Maleficent.webp"
   },
   {
@@ -26,7 +27,7 @@ const teamMembers = [
       strengths: "Sorcery, Manipulation",
       weaknesses: "Ambition, Arrogance",
       traits: ["Cunning", "Ambitious", "Manipulative"],
-      biography: "Jafar is the main antagonist in Disney's 'Aladdin.' He is the Grand Vizier of Agrabah who seeks to gain control of the kingdom using dark magic.",
+      skills: ["Manipulation", "Strategic Thinking", "Deception"],
       imageURL: "imgs/jafar.webp"
   },
   {
@@ -36,7 +37,7 @@ const teamMembers = [
       strengths: "Magic, Charisma",
       weaknesses: "Greed, Vanity",
       traits: ["Charismatic", "Deceptive", "Power-hungry"],
-      biography: "Ursula is the main antagonist in Disney's 'The Little Mermaid.' She is a sea witch who offers Ariel a deal to become human in exchange for her voice.",
+      skills: ["Manipulation", "Strategic Thinking", "Deception"],
       imageURL: "imgs/ursula.png"
   },
   {
@@ -46,7 +47,7 @@ const teamMembers = [
       strengths: "Magic, Vanity",
       weaknesses: "Jealousy, Vanity",
       traits: ["Vain", "Jealous", "Cruel"],
-      biography: "The Evil Queen is the main antagonist in Disney's 'Snow White and the Seven Dwarfs.' She is jealous of Snow White's beauty and plots to have her killed.",
+      skills: ["Manipulation", "Strategic Thinking", "Deception"],
       imageURL: "imgs/evilqueen.png"
   },
   {
@@ -56,9 +57,53 @@ const teamMembers = [
       strengths: "Swordsmanship, Leadership",
       weaknesses: "Fear of Crocodiles, Obsession with Revenge",
       traits: ["Arrogant", "Cowardly", "Vengeful"],
-      biography: "Captain Hook is the main antagonist in 'Peter Pan.' He is the leader of the pirates and is obsessed with getting revenge on Peter Pan for cutting off his hand and feeding it to a crocodile.",
+      skills: ["Manipulation", "Strategic Thinking", "Deception"],
       imageURL: "imgs/captainhook.png"
   },
+  {
+    name: "Gaston",
+    age: "Late 20s or early 30s",
+    movie: "Beauty and the Beast",
+    strengths: "Physical Strength, Charisma",
+    weaknesses: "Arrogance, Hubris",
+    traits: ["Narcissistic, Competitive, Boastful"],
+    skills: ["Manipulation", "Strategic Thinking", "Deception"],
+    biography: "Gaston is the arrogant antagonist of Beauty and the Beast, driven by his jealousy of the Beast and obsession with marrying Belle.",
+    imageURL: "imgs/gaston.png"
+},
+{
+    name: "Cruella de Vil",
+    age: "Late 40s",
+    movie: "Snow White",
+    strengths: "Magic, Vanity",
+    weaknesses: "Jealousy, Vanity",
+    traits: ["Vain", "Jealous", "Cruel"],
+    skills: ["Manipulation", "Strategic Thinking", "Deception"],
+    biography: "Cruella de Vil, the villain in 101 Dalmatians, is a ruthless fashionista who obsesses over capturing dalmatian puppies for fur coats.",
+    imageURL: "imgs/evilqueen.png"
+},
+{
+    name: "Hades",
+    age: "Early 50s",
+    movie: "Peter Pan",
+    strengths: "Swordsmanship, Leadership",
+    weaknesses: "Fear of Crocodiles, Obsession with Revenge",
+    traits: ["Arrogant", "Cowardly", "Vengeful"],
+    skills: ["Manipulation", "Strategic Thinking", "Deception"],
+    biography: "Hades, the scheming ruler of the Underworld in Hercules, is sarcastic and power-hungry, constantly plotting to overthrow Zeus.",
+    imageURL: "imgs/captainhook.png"
+},
+{
+    name: "Queen of Hearts",
+    age: "Early 50s",
+    movie: "Peter Pan",
+    strengths: "Swordsmanship, Leadership",
+    weaknesses: "Fear of Crocodiles, Obsession with Revenge",
+    traits: ["Arrogant", "Cowardly", "Vengeful"],
+    skills: ["Manipulation", "Strategic Thinking", "Deception"],
+    biography: "The tyrannical Queen of Hearts from Alice in Wonderland rules with an iron fist, quick to anger and prone to ordering executions.",
+    imageURL: "imgs/captainhook.png"
+},
 ];
 
 function generateTeamCards() {
@@ -66,7 +111,7 @@ function generateTeamCards() {
 
   teamMembers.forEach((member) => {
       const card = document.createElement("div");
-      card.classList.add("col-md-4");
+      card.classList.add("col-md-4", 'mb-4');
 
       // Style the BGColor of my card based on pos
       let backgroundColor;
@@ -89,6 +134,9 @@ function generateTeamCards() {
           case "peter pan":
               backgroundColor = "rgb(16,66,29)";
               break;
+            case "beauty and the beast":
+            backgroundColor = "rgb(184,169,22)";
+            break;
           default:
               backgroundColor = "gray";
       }
@@ -105,7 +153,9 @@ function generateTeamCards() {
                   <p><strong>Strengths:</strong> ${member.strengths}</p>
                   <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
                   <p><strong>Character Traits:</strong> ${member.traits.join(", ")}</p>
+                  <p><strong>Skills:</strong> ${member.skills.join(", ")}</p>
                   <p><strong>Biography:</strong> ${member.biography}</p>
+
               </div>
           </div>
       `;
