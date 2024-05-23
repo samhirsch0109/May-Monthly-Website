@@ -6,9 +6,9 @@ const teamMembers = [
       strengths: "Intelligence, Manipulation",
       weaknesses: "Ego, Jealousy",
       traits: ["Mysterious", "Determined", "Complex"],
-      skills: ["Manipulation", "Strategic Thinking", "Deception"],
-
-      imageURL: "imgs/scar.png"
+    biography: "Scar, the scheming brother of King Mufasa and uncle to Simba in Disney's The Lion King, orchestrates Mufasa's death to seize the throne, only to be eventually overthrown by Simba.",
+      imageURL: "imgs/scar.png",
+        species: "animal",
   },
   {
       name: "Maleficent",
@@ -17,9 +17,21 @@ const teamMembers = [
       strengths: "Magic, Cunning",
       weaknesses: "Vengeful, Isolation",
       traits: ["Determined", "Powerful", "Resilient"],
-      skills: ["Manipulation", "Strategic Thinking", "Deception"],
-      imageURL: "imgs/Maleficent.webp"
+      biography: "Maleficent, the powerful and vengeful fairy from Disney's Sleeping Beauty, curses Princess Aurora to fall into a death-like sleep, only to later show a more complex and redemptive side in her own story.",
+      imageURL: "imgs/Maleficent.webp",
+    species: 'fairy',
   },
+  {
+    name: "Darth Vader",
+    age: "Unknown",
+    movie: "Star Wars",
+    strengths: "Mastery of the Force, Strategic thinking",
+    weaknesses: "Emotional conflict, Vulnerability to manipulation",
+    traits: ["Intimidating", "Determined", "Regal"],
+    biography: "Darth Vader, once Anakin Skywalker, is the menacing enforcer of the Galactic Empire in Star Wars. Seduced by the dark side, he wields the Force with mastery and strikes fear with his iconic presence and red lightsaber.",
+    imageURL: "imgs/darthvador.webp",
+    species: "human",
+    },
   {
       name: "Jafar",
       age: "Mid 30s",
@@ -27,8 +39,9 @@ const teamMembers = [
       strengths: "Sorcery, Manipulation",
       weaknesses: "Ambition, Arrogance",
       traits: ["Cunning", "Ambitious", "Manipulative"],
-      skills: ["Manipulation", "Strategic Thinking", "Deception"],
-      imageURL: "imgs/jafar.webp"
+      biography: "Jafar, the sinister sorcerer in Disney's Aladdin, schemes to seize power and marry Princess Jasmine, using his magic to manipulate others until his plans are ultimately foiled by Aladdin and the Genie.",
+      imageURL: "imgs/jafar.webp",
+      species: 'human',
   },
   {
       name: "Ursula",
@@ -37,8 +50,9 @@ const teamMembers = [
       strengths: "Magic, Charisma",
       weaknesses: "Greed, Vanity",
       traits: ["Charismatic", "Deceptive", "Power-hungry"],
-      skills: ["Manipulation", "Strategic Thinking", "Deception"],
-      imageURL: "imgs/ursula.png"
+      biography:"Ursula,the sea witch in Disney's The Little Mermaid, tricks Ariel into making deals with her, using Ariel's wish for human love to get what she wants. But Ariel and Prince Eric manage to defeat her in the end.",
+      imageURL: "imgs/ursula.png",
+      species: "witch",
   },
   {
       name: "Evil Queen",
@@ -47,8 +61,9 @@ const teamMembers = [
       strengths: "Magic, Vanity",
       weaknesses: "Jealousy, Vanity",
       traits: ["Vain", "Jealous", "Cruel"],
-      skills: ["Manipulation", "Strategic Thinking", "Deception"],
-      imageURL: "imgs/evilqueen.png"
+      biography: "The Evil Queen in Snow White is envious of her stepdaughter's beauty, giving her a poisoned apple to eliminate her. But her plan fails, and she meets a dark end.",
+      imageURL: "imgs/evilqueen.png",
+      species: "witch",
   },
   {
       name: "Captain Hook",
@@ -57,7 +72,7 @@ const teamMembers = [
       strengths: "Swordsmanship, Leadership",
       weaknesses: "Fear of Crocodiles, Obsession with Revenge",
       traits: ["Arrogant", "Cowardly", "Vengeful"],
-      skills: ["Manipulation", "Strategic Thinking", "Deception"],
+      biography: "Captain Hook, the pirate in Peter Pan, seeks revenge on Peter Pan for cutting off his hand and feeding it to a crocodile. He plots to capture Pan but is always outsmarted by the boy who never grows up.",
       imageURL: "imgs/captainhook.png"
   },
   {
@@ -69,41 +84,53 @@ const teamMembers = [
     traits: ["Narcissistic, Competitive, Boastful"],
     skills: ["Manipulation", "Strategic Thinking", "Deception"],
     biography: "Gaston is the arrogant antagonist of Beauty and the Beast, driven by his jealousy of the Beast and obsession with marrying Belle.",
-    imageURL: "imgs/gaston.png"
+    imageURL: "imgs/gaston.png",
+    species: "human",
 },
 {
-    name: "Cruella de Vil",
-    age: "Late 40s",
-    movie: "Snow White",
-    strengths: "Magic, Vanity",
-    weaknesses: "Jealousy, Vanity",
-    traits: ["Vain", "Jealous", "Cruel"],
-    skills: ["Manipulation", "Strategic Thinking", "Deception"],
-    biography: "Cruella de Vil, the villain in 101 Dalmatians, is a ruthless fashionista who obsesses over capturing dalmatian puppies for fur coats.",
-    imageURL: "imgs/evilqueen.png"
+    name: "Cruella De Vil",
+    age: "47",
+    movie: "101 Dalmatians",
+    strengths: "Fashion sense, Manipulation",
+    weaknesses: "Obsession, Impulsiveness",
+    traits: ["Creative", "Charming", "Resourceful"],
+    biography: "Cruella De Vil, the iconic antagonist from Disney's 101 Dalmatians, is a fashion-obsessed villain with a penchant for fur coats made from Dalmatian puppies. Despite her villainous ways, she's known for her charisma and bold fashion choices.",
+    imageURL: "imgs/Cruella_de_Vil.png",
+    species: "human",
 },
 {
     name: "Hades",
-    age: "Early 50s",
-    movie: "Peter Pan",
-    strengths: "Swordsmanship, Leadership",
-    weaknesses: "Fear of Crocodiles, Obsession with Revenge",
-    traits: ["Arrogant", "Cowardly", "Vengeful"],
-    skills: ["Manipulation", "Strategic Thinking", "Deception"],
-    biography: "Hades, the scheming ruler of the Underworld in Hercules, is sarcastic and power-hungry, constantly plotting to overthrow Zeus.",
-    imageURL: "imgs/captainhook.png"
+    age: "Immortal",
+    movie: "Hercules",
+    strengths: "Manipulation, Fire manipulation",
+    weaknesses: "Impatience, Pride",
+    traits: ["Witty", "Sarcastic", "Power-hungry"],
+    biography: "Hades, the hot-tempered and scheming god of the underworld in Disney's Hercules, is known for his fiery personality and his desire to overthrow his brother Zeus and rule Mount Olympus. Despite his villainous nature, he often provides comic relief with his sharp wit and sarcastic remarks.",
+    imageURL: "imgs/Hades.webp",
+    species: "god"
 },
 {
     name: "Queen of Hearts",
     age: "Early 50s",
-    movie: "Peter Pan",
-    strengths: "Swordsmanship, Leadership",
-    weaknesses: "Fear of Crocodiles, Obsession with Revenge",
-    traits: ["Arrogant", "Cowardly", "Vengeful"],
-    skills: ["Manipulation", "Strategic Thinking", "Deception"],
-    biography: "The tyrannical Queen of Hearts from Alice in Wonderland rules with an iron fist, quick to anger and prone to ordering executions.",
-    imageURL: "imgs/captainhook.png"
+    movie: "Alice in Wonderland",
+    strengths: "Authority, Commanding Presence",
+    weaknesses: "Temper, Impulsiveness",
+    traits: ["Dictatorial", "Unpredictable", "Eccentric"],
+    biography: "The Queen of Hearts, the ruthless monarch from Disney's Alice in Wonderland, is known for her obsession with order and her tendency to shout 'Off with their heads!' at the slightest offense. She rules over Wonderland with an iron fist, often making arbitrary and irrational decisions.",
+    imageURL: "imgs/queenofhearts.png",
+    species: "human"
 },
+{
+name: "Kylo Ren",
+age: "Unknown",
+movie: "Star Wars",
+strengths: "Force sensitivity, Combat skills",
+weaknesses: "Emotional turmoil, Impulsiveness",
+traits: ["Conflicted", "Power-hungry", "Talented"],
+biography: "Kylo Ren, born Ben Solo, is the conflicted antagonist of the Star Wars Sequel Trilogy. As the grandson of Darth Vader, he struggles with the pull to the light side of the Force while striving to emulate his grandfather's power. With his crossguard lightsaber and formidable Force abilities, he seeks to fulfill his destiny as a powerful Sith Lord.",
+imageURL: "imgs/Kylo_Ren.png",
+species: "Human",
+}
 ];
 
 function generateTeamCards() {
@@ -141,19 +168,47 @@ function generateTeamCards() {
               backgroundColor = "gray";
       }
 
+      let borderColor;
+      let textColor;
+      switch (member.species) {
+          case "human":
+              borderColor = "black";
+              textColor = "black";
+              break;
+          case "animal":
+              borderColor = "brown";
+              textColor = "brown";
+              break;
+          case "fairy":
+              borderColor = "purple";
+              textColor = "purple";
+              break;
+          case "witch":
+              borderColor = "green";
+              textColor = "green";
+              break;
+          case "Greek God":
+              borderColor = "blue";
+              textColor = "blue";
+              break;
+          default:
+              borderColor = "white";
+              textColor = "white";
+      }
+
+
       card.innerHTML = `
           <div class="card">
               <div class="card-header">
                   ${member.name}
               </div>
               <img src="${member.imageURL}" class="image-fluid">
-              <div id="cardBody" class="card-body" style="background-color:${backgroundColor};">
+              <div id="cardBody" class="card-body" style="background-color:${backgroundColor}; color: ${textColor};">
                   <p><strong>Age:</strong> ${member.age}</p>
                   <p><strong>Movie Known For:</strong> ${member.movie}</p>
                   <p><strong>Strengths:</strong> ${member.strengths}</p>
                   <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
                   <p><strong>Character Traits:</strong> ${member.traits.join(", ")}</p>
-                  <p><strong>Skills:</strong> ${member.skills.join(", ")}</p>
                   <p><strong>Biography:</strong> ${member.biography}</p>
 
               </div>
@@ -164,7 +219,6 @@ function generateTeamCards() {
       for (let i = 0; i < card.children.length; i++) {
           card.children[i].style.backgroundColor = backgroundColor;
       }
-
       teamCardsContainer.appendChild(card);
   });
 }
