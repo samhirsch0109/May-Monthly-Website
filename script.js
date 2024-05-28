@@ -3,134 +3,133 @@ const teamMembers = [
         name: "Scar",
         age: "52",
         movie: "Lion King",
-        strengths: "Intelligence, Manipulation",
-        weaknesses: "Ego, Jealousy",
-        traits: ["Mysterious", "Determined", "Complex"],
+        strengths: ["Intelligence, Manipulation"],
+        weaknesses: ["Ego, Jealousy"],
+        traits: ["Mysterious, Determined, Complex"],
         biography: "Scar, the scheming brother of King Mufasa and uncle to Simba in Disney's The Lion King, orchestrates Mufasa's death to seize the throne, only to be eventually overthrown by Simba.",
         imageURL: "imgs/scar.png",
-        species: "animal",
+        species: "Animal",
     },
     {
         name: "Maleficent",
         age: "41",
         movie: "Maleficent",
-        strengths: "Magic, Cunning",
-        weaknesses: "Vengeful, Isolation",
-        traits: ["Determined", "Powerful", "Resilient"],
+        strengths: ["Magic, Cunning"],
+        weaknesses: ["Vengeful, Isolation"],
+        traits: ["Determined, Powerful, Resilient"],
         biography: "Maleficent, the powerful and vengeful fairy from Disney's Sleeping Beauty, curses Princess Aurora to fall into a death-like sleep, only to later show a more complex and redemptive side in her own story.",
         imageURL: "imgs/Maleficent.webp",
-        species: 'fairy',
+        species: 'Fairy',
     },
     {
         name: "Darth Vader",
         age: "45",
         movie: "Star Wars",
-        strengths: "Mastery of the Force, Strategic thinking",
-        weaknesses: "Emotional conflict, Vulnerability to manipulation",
-        traits: ["Intimidating", "Determined", "Regal"],
+        strengths: ["Mastery of the Force, Strategic thinking"],
+        weaknesses: ["Emotional conflict, Vulnerability to manipulation"],
+        traits: ["Intimidating, Determined, Regal"],
         biography: "Darth Vader, once Anakin Skywalker, is the menacing enforcer of the Galactic Empire in Star Wars. Seduced by the dark side, he wields the Force with mastery and strikes fear with his iconic presence and red lightsaber.",
         imageURL: "imgs/darthvador.webp",
-        species: "human",
+        species: "Human",
     },
     {
         name: "Jafar",
         age: "Mid 30s",
         movie: "Aladdin",
-        strengths: "Sorcery, Manipulation",
-        weaknesses: "Ambition, Arrogance",
-        traits: ["Cunning", "Ambitious", "Manipulative"],
+        strengths: ["Sorcery, Manipulation"],
+        weaknesses: ["Ambition, Arrogance"],
+        traits: ["Cunning, Ambitious, Manipulative"],
         biography: "Jafar, the sinister sorcerer in Disney's Aladdin, schemes to seize power and marry Princess Jasmine, using his magic to manipulate others until his plans are ultimately foiled by Aladdin and the Genie.",
         imageURL: "imgs/jafar.webp",
-        species: 'human',
+        species: 'Human',
     },
     {
         name: "Ursula",
         age: "95",
         movie: "Little Mermaid",
-        strengths: "Magic, Charisma",
-        weaknesses: "Greed, Vanity",
-        traits: ["Charismatic", "Deceptive", "Power-hungry"],
+        strengths: ["Magic, Charisma"],
+        weaknesses: ["Greed, Vanity"],
+        traits: ["Charismatic, Deceptive, Power-hungry"],
         biography: "Ursula,the sea witch in Disney's The Little Mermaid, tricks Ariel into making deals with her, using Ariel's wish for human love to get what she wants. But Ariel and Prince Eric manage to defeat her in the end.",
         imageURL: "imgs/ursula.png",
-        species: "witch",
+        species: "Witch",
     },
     {
         name: "Evil Queen",
         age: "Late 40s",
         movie: "Snow White",
-        strengths: "Magic, Vanity",
-        weaknesses: "Jealousy, Vanity",
-        traits: ["Vain", "Jealous", "Cruel"],
+        strengths: ["Magic, Vanity"],
+        weaknesses: ["Jealousy, Vanity"],
+        traits: ["Vain, Jealous, Cruel"],
         biography: "The Evil Queen in Snow White is envious of her stepdaughter's beauty, giving her a poisoned apple to eliminate her. But her plan fails, and she meets a dark end.",
         imageURL: "imgs/evilqueen.png",
-        species: "witch",
+        species: "Witch",
     },
     {
         name: "Captain Hook",
         age: "Early 50s",
         movie: "Peter Pan",
-        strengths: "Swordsmanship, Leadership",
-        weaknesses: "Fear of Crocodiles, Obsession with Revenge",
-        traits: ["Arrogant", "Cowardly", "Vengeful"],
+        strengths: ["Swordsmanship, Leadership"],
+        weaknesses: ["Fear of Crocodiles, Obsession with Revenge"],
+        traits: ["Arrogant, Cowardly, Vengeful"],
         biography: "Captain Hook, the pirate in Peter Pan, seeks revenge on Peter Pan for cutting off his hand and feeding it to a crocodile. He plots to capture Pan but is always outsmarted by the boy who never grows up.",
         imageURL: "imgs/captainhook.png",
-        species: "human",
+        species: "Human",
     },
     {
         name: "Gaston",
         age: "Late 20s or early 30s",
         movie: "Beauty and the Beast",
-        strengths: "Physical Strength, Charisma",
-        weaknesses: "Arrogance, Hubris",
+        strengths: ["Physical Strength, Charisma"],
+        weaknesses: ["Arrogance, Hubris"],
         traits: ["Narcissistic, Competitive, Boastful"],
-        skills: ["Manipulation", "Strategic Thinking", "Deception"],
         biography: "Gaston is the arrogant antagonist of Beauty and the Beast, driven by his jealousy of the Beast and obsession with marrying Belle.",
         imageURL: "imgs/gaston.png",
-        species: "human",
+        species: "Human",
     },
     {
         name: "Cruella De Vil",
         age: "47",
         movie: "101 Dalmatians",
-        strengths: "Fashion sense, Manipulation",
-        weaknesses: "Obsession, Impulsiveness",
-        traits: ["Creative", "Charming", "Resourceful"],
+        strengths: ["Fashion sense, Manipulation"],
+        weaknesses: ["Obsession, Impulsiveness"],
+        traits: ["Creative, Charming, Resourceful"],
         biography: "Cruella De Vil, the iconic antagonist from Disney's 101 Dalmatians, is a fashion-obsessed villain with a penchant for fur coats made from Dalmatian puppies. Despite her villainous ways, she's known for her charisma and bold fashion choices.",
         imageURL: "imgs/Cruella_de_Vil.png",
-        species: "human",
+        species: "Human",
     },
     {
         name: "Hades",
         age: "Immortal",
         movie: "Hercules",
-        strengths: "Manipulation, Fire manipulation",
-        weaknesses: "Impatience, Pride",
-        traits: ["Witty", "Sarcastic", "Power-hungry"],
+        strengths: ["Manipulation, Fire manipulation"],
+        weaknesses: ["Impatience, Pride"],
+        traits: ["Witty, Sarcastic, Power-hungry"],
         biography: "Hades, the hot-tempered and scheming god of the underworld in Disney's Hercules, is known for his fiery personality and his desire to overthrow his brother Zeus and rule Mount Olympus. Despite his villainous nature, he often provides comic relief with his sharp wit and sarcastic remarks.",
         imageURL: "imgs/Hades.webp",
-        species: "god"
+        species: "God"
     },
     {
         name: "Queen of Hearts",
         age: "Early 50s",
         movie: "Alice in Wonderland",
-        strengths: "Authority, Commanding Presence",
-        weaknesses: "Temper, Impulsiveness",
-        traits: ["Dictatorial", "Unpredictable", "Eccentric"],
+        strengths: ["Authority, Commanding Presence"],
+        weaknesses: ["Temper, Impulsiveness"],
+        traits: ["Dictatorial, Unpredictable, Eccentric"],
         biography: "The Queen of Hearts, the ruthless monarch from Disney's Alice in Wonderland, is known for her obsession with order and her tendency to shout 'Off with their heads!' at the slightest offense. She rules over Wonderland with an iron fist, often making arbitrary and irrational decisions.",
         imageURL: "imgs/queenofhearts.png",
-        species: "human"
+        species: "Human"
     },
     {
         name: "Kylo Ren",
         age: "29",
         movie: "Star Wars",
-        strengths: "Force sensitivity, Combat skills",
-        weaknesses: "Emotional turmoil, Impulsiveness",
-        traits: ["Conflicted", "Power-hungry", "Talented"],
+        strengths: ["Force sensitivity, Combat skills"],
+        weaknesses: ["Emotional turmoil, Impulsiveness"],
+        traits: ["Conflicted, Power-hungry, Talented"],
         biography: "Kylo Ren, born Ben Solo, is the conflicted antagonist of the Star Wars Sequel Trilogy. As the grandson of Darth Vader, he struggles with the pull to the light side of the Force while striving to emulate his grandfather's power. With his crossguard lightsaber and formidable Force abilities, he seeks to fulfill his destiny as a powerful Sith Lord.",
         imageURL: "imgs/Kylo_Ren.png",
-        species: "human",
+        species: "Human",
     }
 ];
 
@@ -182,7 +181,7 @@ function generateTeamCards() {
         }
 
         let borderColor;
-        switch (member.species) {
+        switch (member.species.toLowerCase()) { 
             case "human":
                 borderColor = "white";
                 break;
@@ -199,7 +198,7 @@ function generateTeamCards() {
                 borderColor = "blue";
                 break;
             default:
-                borderColor = "white";
+                borderColor = "black";
         }
 
 
@@ -214,9 +213,9 @@ function generateTeamCards() {
                   <p><strong>Movie Known For:</strong> ${member.movie}</p>
                   <p><strong>Strengths:</strong> ${member.strengths}</p>
                   <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
-                  <p><strong>Character Traits:</strong> ${member.traits.join(", ")}</p>
+                  <p><strong>Character Traits:</strong> ${member.traits}</p>
                   <p><strong>Biography:</strong> ${member.biography}</p>
-                  <p><strong>Biography:</strong> ${member.species}</p>
+                  <p><strong>Species:</strong> ${member.species}</p>
 
               </div>
           </div>
